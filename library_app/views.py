@@ -10,7 +10,7 @@ def book_list(request):
     context = {'books': books}
     return render(request, 'library_app/book_list.html', context)
 
-def book_detail(request):
+def book_detail(request, id):
     details = Book.objects.get(id=id)
     context = {'details': details}
     return render(request, 'library_app/book_detail.html', context)
