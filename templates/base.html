@@ -11,5 +11,10 @@
     <h1>Library Management</h1>
     {% block content %}
     {% endblock %}
+
+{% if request.path != '/'%}
+    <a href="/">Home</a>
+{% endif %}
+
 </body>
 </html>

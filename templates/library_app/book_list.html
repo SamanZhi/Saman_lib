@@ -8,4 +8,13 @@ Book List page
 
 {% block content %}
  <h2>This is the book list page</h2>
+ <ol>
+    <li>
+    {% for book in books %}
+        <a href="{% url 'book_detail' book.id %}">
+            <h2>{{book.title}}</h2>
+        </a>
+    </li>
+    {% endfor %}
+ </ol>
 {% endblock %}
