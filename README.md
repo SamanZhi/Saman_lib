@@ -1,2 +1,2 @@
-# Saman_lib
+# Library Management Website
 A Django-based library management system

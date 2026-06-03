@@ -1,13 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpRequest, HttpResponse
 
 # Create your views here.
-def book_list(request=HttpRequest):
-    return render(request=HttpResponse)
+def main(request):
+    return render(request, 'library_app/main.html')
 
-def book_detail(request=HttpRequest):
-    return render(request=HttpResponse)
+def book_list(request):
+    return render(request, 'library_app/book_list.html')
 
-def book_create_update(request=HttpRequest):
-    return render(request=HttpResponse)
+def book_detail(request):
+    return render(request, 'library_app/book_detail.html')
+
+def book_create_update(request):
+    return render(request, 'library_app/book_form.html')
 
