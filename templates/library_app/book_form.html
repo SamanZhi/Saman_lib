@@ -8,4 +8,10 @@ book form page
 
 {% block content %}
  <h2>This is the book form page</h2>
+ <form method='POST'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type='submit'>Save</button>
+</form>
+ <br>
 {% endblock %}

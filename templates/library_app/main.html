@@ -7,9 +7,11 @@ Home page
 
 
 {% block content %}
- <h1>This is the main page</h1>
+ <h2>This is the main page</h2>
  <a href="{% url 'book_list' %}">List of books</a>
- {% comment %} <a href="{% url 'book_detail' %}">details of books</a> {% endcomment %}
- <a href="{% url 'book_form' %}">forms of books</a>
+<br>
+ <a href="{% url 'book_form' %}">Add or edit books</a>
+<br>
+<br>
 {% endblock %}
 

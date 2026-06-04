@@ -9,10 +9,10 @@ Book List page
 {% block content %}
  <h2>This is the book list page</h2>
  <ul>
-    <li>
-    {% for book in books %}
+     {% for book in books %}
+     <li>
         <a href="{% url 'book_detail' book.id %}">
-            <p><b>{{book.title}}</b></p>
+            <b>{{book.title}}</b>
         </a>
         <p>By: <b>{{book.author}}</b></p>
         <hr>
