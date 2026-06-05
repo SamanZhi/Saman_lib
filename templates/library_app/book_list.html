@@ -11,10 +11,10 @@ Book List page
  <ul>
      {% for book in books %}
      <li>
-        <a href="{% url 'book_detail' book.id %}">
-            <b>{{book.title}}</b>
-        </a>
-        <p>By: <b>{{book.author}}</b></p>
+         <b>{{book.title}}</b>
+         <p>By: <b>{{book.author}}</b></p>
+         <a href="{% url 'book_detail' book.id %}">Details</a>
+         <a href="{% url 'book_update' book.id %}">Edit</a>
         <hr>
     </li>
     {% endfor %}
